@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cameras" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NvG-aZ-fTx">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y3e-E1-XeS">
+                                <rect key="frame" x="0.0" y="564" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="カメラ" id="1qt-6P-veX">
+                                        <connections>
+                                            <action selector="launchCamera:" destination="BYZ-38-t0r" id="0DS-Ux-bQI"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="y3e-E1-XeS" firstAttribute="leading" secondItem="NvG-aZ-fTx" secondAttribute="leading" id="6fa-Qx-WYd"/>
+                            <constraint firstItem="NvG-aZ-fTx" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="C2N-or-QQ2"/>
+                            <constraint firstItem="NvG-aZ-fTx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IVU-P2-q03"/>
+                            <constraint firstItem="y3e-E1-XeS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="544" id="MnL-Ao-kfQ"/>
+                            <constraint firstItem="NvG-aZ-fTx" firstAttribute="trailing" secondItem="y3e-E1-XeS" secondAttribute="trailing" id="mg4-lU-zhU"/>
+                            <constraint firstItem="NvG-aZ-fTx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yU3-Nm-T0a"/>
+                            <constraint firstAttribute="trailing" secondItem="NvG-aZ-fTx" secondAttribute="trailing" id="zzT-4F-3Zt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="NvG-aZ-fTx" id="ZP6-2T-FJo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="265"/>
+        </scene>
+    </scenes>
+</document>
